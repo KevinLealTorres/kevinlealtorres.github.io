@@ -3,6 +3,19 @@ import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Not Found" description="404 Error — this page was not found">
-	<Hero title="Page Not Found" tagline="Not found" />
-</BaseLayout>
+<main class="text-center p-5 m-5 items-center">
+	<h1 class="text-6xl">
+		This page doesn't exist or doesn't working!
+	</h1>
+
+	<figure>
+		<img src="../../public/assets/gato_404.jpeg" alt="cat working in this page">
+	</figure>
+
+	<p>
+		Don't worry, I give you this command to return home :)
+	</p>
+	<a class="border border-black p-5 hover:bg-lime-700" href="/">
+		cd $HOME
+	</a>
+</main>
