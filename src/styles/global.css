@@ -1,13 +1,19 @@
+@import url('anton.css');
+@import url('urbanist.css');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-    @apply lg:text-2xl font-bold;
+body {
+    font-family: Urbanist-Regular;
+    @apply bg-k-darkblue;
+
 }
 
-body {
-    @apply bg-gray-950;
+h1 {
+    @apply lg:text-2xl font-bold;
 }
 
 h2 {
@@ -16,7 +22,7 @@ h2 {
 
 .cv-subtitle {
     @apply text-2xl;
-    @apply bg-blue-400;
+    @apply bg-k-lightgreen;
     @apply bg-opacity-50;
     @apply text-gray-700;
     @apply p-2;
