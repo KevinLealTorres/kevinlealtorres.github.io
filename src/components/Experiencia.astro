@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets'
+import Coding from '/src/imagenes/iconos/coding.svg'
+---
+
+<div id="experiencia">
+    <h2 class="cv-subtitle">Experiencia:</h2>
+    <div class="flex items-center *:p-2">
+        <Image src={Coding} alt="Icono de Coding" class="size-14" />
+        <div>
+            <h2 class="max-md:text-sm">Creé una página web para una ONG</h2>
+            <p class="max-md:text-xs"><em>Cáritas de Guadalajara</em></p>
+            <p class="max-md:text-xs">Agosto 2022 - mayo 2023</p>
+            <ul class="list-disc list-inside max-md:text-xs">
+                <li>Propuse y creé una página web enfocado a escuelas católicas</li>
+                <li>Recopilé los requerimientos de los stakeholders</li>
+                <li>Entregué prototipos funcionales</li>
+            </ul>
+        </div>
+    </div>
+</div>

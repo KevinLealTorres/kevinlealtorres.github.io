@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import Perfil from "../imagenes/perfil.jpeg";
+---
+
+<div
+    id="presentacion"
+    class="rounded-tl-lg rounded-tr-lg items-center max-md:text-center justify-items-center p-2"
+>
+    <Image
+        src={Perfil}
+        alt="Mi foto de perfil"
+        class="rounded-full max-md:size-16 size-32"
+    />
+    <div id="presentacion" class="text-center *:p-2">
+        <h1 class="max-md:text-sm">
+            Ing. en desarrollo de software, Kevin Leal
+        </h1>
+        <p class="max-md:text-xs text-balance">
+            Actualmente soy estudiante en la universidad TecMilenio. Tengo 21
+            años, soy de Zapopan, Jalisco. Apasionado por el desarrollo web y
+            Big Data. Buscando oportunidades para colaborar en todo tipo de
+            proyectos.
+        </p>
+
+    </div>
+</div>
+<style>
+    #presentacion {
+        @apply text-white;
+    }

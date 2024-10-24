@@ -1,0 +1,54 @@
+---
+import { Image } from "astro:assets";
+import Github from "/src/imagenes/iconos/Github.svg";
+import Twitter from "/src/imagenes/iconos/Twitter.svg";
+import Instagram from "/src/imagenes/iconos/Instagram.svg";
+import Linkedin from "/src/imagenes/iconos/LinkedIN.svg";
+import Pagina from '/src/imagenes/iconos/Pagina.svg';
+
+const redes = [
+    {
+        nombre: "Twitter",
+        url: "https://x.com/@kevinlealtorres",
+        imagen: Twitter,
+    },
+    {
+        nombre: "Github",
+        url: "https://github.com/kevinLealTorres",
+        imagen: Github,
+    },
+    {
+        nombre: "Instagram",
+        url: "https://instagram.com/kevinlealtorres",
+        imagen: Instagram
+    },
+    {
+        nombre: "Linkedin",
+        url: "https://linkedin.com/in/kevin-leal-torres",
+        imagen: Linkedin,
+    },
+    {
+        nombre: 'Mi sitio web',
+        url: 'https://kevinlealtorres.github.io',
+        imagen: Pagina,
+    }
+];
+---
+
+<div id="social">
+    <ul class="md:flex">
+        {
+            redes.map(({ imagen, url, nombre }) => (
+                <li>
+                    <a href={url} >
+                        <Image
+                            src={imagen}
+                            alt={`Icono de ${nombre}`}
+                            class=" p-1 w-8 h-8"
+                        />
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</div>
